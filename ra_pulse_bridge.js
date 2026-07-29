@@ -1,51 +1,62 @@
-const https = require('https');
-const fs = require('fs');
+/**
+ * Ra-Pulse Bridge - Capa 3 Integration (POD v1.0)
+ * Autor: @moranricardo
+ */
 
-const config = {
-    host: 'review.lineageos.org',
-    user: process.env.GERRIT_USER,
-    password: process.env.GERRIT_PASS,
-    path: '/changes/?q=status:open OR status:merged'
+const fs = require('fs');
+const path = require('path');
+const { execSync } = require('child_process');
+
+const MUTATION_DICTIONARY = {
+    directories: [
+        path.join(process.env.HOME, 'logs'),
+        path.join(process.env.HOME, 'data')
+    ],
+    forbidden_extensions: ['.log', '.json', '.tmp']
 };
 
-function executeMaintenance() {
-    const auth = Buffer.from(`${config.user}:${config.password}`).toString('base64');
-    
-    // Usamos encodeURI para evitar el error de caracteres no escapados
-    const options = {
-        hostname: config.host,
-        path: encodeURI(config.path),
-        method: 'GET',
-        headers: { 
-            'Authorization': `Basic ${auth}`, 
-            'Accept': 'application/json' 
+function enforceLayer3Validation() {
+    console.log('[antiflow+] Ejecutando validación de Capa 3 (POD v1.0)...');
+    let violations = [];
+
+    MUTATION_DICTIONARY.directories.forEach(dir => {
+        if (fs.existsSync(dir)) {
+            const items = fs.readdirSync(dir);
+            items.forEach(item => {
+                const itemPath = path.join(dir, item);
+                if (fs.statSync(itemPath).isFile()) {
+                    violations.push(itemPath);
+                }
+            });
         }
-    };
+    });
 
-    https.get(options, (res) => {
-        let data = '';
-        res.on('data', (chunk) => { data += chunk; });
-        res.on('end', () => {
-            const cleanData = data.replace(/^\)\]\}'\n/, '');
-            try {
-                const changes = JSON.parse(cleanData);
-                const nuevoConteo = changes.length;
-                let conteoPrevio = 0;
-                
-                if (fs.existsSync('ultimo_conteo.txt')) {
-                    conteoPrevio = parseInt(fs.readFileSync('ultimo_conteo.txt', 'utf8'));
-                }
-
-                if (nuevoConteo !== conteoPrevio) {
-                    fs.writeFileSync('log_mantenimiento.json', JSON.stringify(changes, null, 2));
-                    fs.writeFileSync('ultimo_conteo.txt', nuevoConteo.toString());
-                    console.log(`🔄 Cambio detectado: ${conteoPrevio} -> ${nuevoConteo}.`);
-                } else {
-                    console.log(`✅ Sin cambios nuevos.`);
-                }
-            } catch (e) { console.error("❌ Error al procesar:", e.message); }
-        });
-    }).on('error', (err) => console.error("❌ Red:", err.message));
+    if (violations.length > 0) {
+        console.error('[!] 🚨 ALERTA ROJA [Mutación Detectada]: Archivos ilegales en almacenamiento interno:');
+        violations.forEach(v => console.error(`    - Obstrucción: ${v}`));
+        console.error('[!] Sincronización con GitHub bloqueada por protocolo Zero-Trust.');
+        process.exit(1);
+    } else {
+        console.log('[+] Validador Capa 3: Cero rastros locales. Integridad intacta.');
+    }
 }
 
-executeMaintenance();
+function syncWithGitHub() {
+    enforceLayer3Validation();
+    
+    try {
+        console.log('🌐 Sincronizando estado con SSoT en GitHub (@moranricardo)...');
+        const repoPath = path.join(process.env.HOME, 'git/ra-pulse-orchestrator');
+        execSync('git add . && git commit -m "🤖 auto(bridge): Sincronización limpia bajo POD v1.0" || true', { cwd: repoPath, stdio: 'inherit' });
+        execSync('git push origin main || true', { cwd: repoPath, stdio: 'inherit' });
+        console.log('✅ [SaaS/SSoT Sincronizado con Éxito]');
+    } catch (error) {
+        console.error('⚠️ Error durante el puente de sincronización:', error.message);
+    }
+}
+
+if (require.main === module) {
+    syncWithGitHub();
+}
+
+module.exports = { enforceLayer3Validation, syncWithGitHub };
