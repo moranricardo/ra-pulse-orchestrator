@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Descargar el Código del Repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Instalar Entorno de Node.js v26
         uses: actions/setup-node@v4
