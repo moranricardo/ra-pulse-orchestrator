@@ -13,7 +13,7 @@ jobs:
         run: echo "Iniciando Ra Pulse Orchestrator..."
         
       - name: 🔗 Clonar Bot-Factory (Agente Auditor)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: moranricardo/bot-factory
           path: bot-factory
