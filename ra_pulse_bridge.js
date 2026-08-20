@@ -46,7 +46,7 @@ function syncWithGitHub() {
     
     try {
         console.log('🌐 Sincronizando estado con SSoT en GitHub (@moranricardo)...');
-        const repoPath = path.join(process.env.HOME, 'git/ra-pulse-orchestrator');
+        const repoPath = path.join(process.env.HOME, 'workspace-orquestador/ra-pulse-orchestrator');
         execSync('git add . && git commit -m "🤖 auto(bridge): Sincronización limpia bajo POD v1.0" || true', { cwd: repoPath, stdio: 'inherit' });
         execSync('git push origin main || true', { cwd: repoPath, stdio: 'inherit' });
         console.log('✅ [SaaS/SSoT Sincronizado con Éxito]');
