@@ -15,14 +15,14 @@
     "hasAnomalies": false
   },
   "gerrit": {
-    "last_seen_change_id": "I56aeeecc869c3115a6a43548f65bbc447503d96b",
+    "last_seen_change_id": "I0a16cacd998d56729ed2e8c276286befd2051297",
     "pending_reviews": 5
   },
   "radios": {
     "didactic-octo-chrome": {
-      "last_sync": "2026-08-24T16:38:24.416Z",
+      "last_sync": "2026-08-24T17:31:32.202Z",
       "status": "ACTIVE"
     }
   },
-  "last_pulsecheck": "2026-08-24T16:38:24.417Z"
+  "last_pulsecheck": "2026-08-24T17:31:32.202Z"
 }
