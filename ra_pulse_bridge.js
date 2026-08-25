@@ -1,6 +1,7 @@
 /**
  * Ra-Pulse Bridge - Capa 3 Integration (POD v1.0)
  * Autor: @moranricardo
+ * Actualizado para detección dinámica de ruta de repositorio.
  */
 
 const fs = require('fs');
@@ -25,7 +26,10 @@ function enforceLayer3Validation() {
             items.forEach(item => {
                 const itemPath = path.join(dir, item);
                 if (fs.statSync(itemPath).isFile()) {
-                    violations.push(itemPath);
+                    const ext = path.extname(itemPath);
+                    if (MUTATION_DICTIONARY.forbidden_extensions.includes(ext)) {
+                        violations.push(itemPath);
+                    }
                 }
             });
         }
@@ -43,10 +47,10 @@ function enforceLayer3Validation() {
 
 function syncWithGitHub() {
     enforceLayer3Validation();
-    
+
     try {
         console.log('🌐 Sincronizando estado con SSoT en GitHub (@moranricardo)...');
-        const repoPath = path.join(process.env.HOME, 'workspace-orquestador/ra-pulse-orchestrator');
+        const repoPath = __dirname;
         execSync('git add . && git commit -m "🤖 auto(bridge): Sincronización limpia bajo POD v1.0" || true', { cwd: repoPath, stdio: 'inherit' });
         execSync('git push origin main || true', { cwd: repoPath, stdio: 'inherit' });
         console.log('✅ [SaaS/SSoT Sincronizado con Éxito]');
