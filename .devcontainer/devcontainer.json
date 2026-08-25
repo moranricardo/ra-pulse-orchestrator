@@ -1,11 +1,17 @@
 {
-    // Name this configuration
-    "name": "Codespace for Skills!",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "GitHub.copilot"
-            ]
-        }
+  "name": "Node.js & GitHub Copilot Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "esbenp.prettier-vscode"
+      ]
     }
+  },
+  "postCreateCommand": "npm install"
 }
