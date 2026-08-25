@@ -1,8 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rounded&color=0d1117&height=100&section=header&text=RA-PULSE%20ORCHESTRATOR&fontSize=22&fontColor=58A6FF&stroke=30363d&strokeWidth=2&fontAlignY=50&desc=Zero-Trust%20System%20&%20State%20Emulation&descSize=12&descColor=8b949e" width="100%" alt="Banner" />
+<a href="https://github.com/moranricardo/ra-pulse-orchestrator">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&pause=1000&color=58A6FF&center=true&vCenter=true&width=380&height=65&lines=RA-PULSE+ORCHESTRATOR;SYSTEM+STATUS%3A+ACTIVE+PULSE;ZERO-TRUST+SECURITY+ENABLED" alt="Typing SVG" />
+</a>
 
-<br><br>
+<br>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
