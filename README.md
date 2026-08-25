@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,30&height=160&section=header&text=RA-PULSE%20ORCHESTRATOR&fontSize=26&fontColor=58a6ff&animation=fadeIn&fontAlignY=38&desc=Zero-Trust%20System%20&%20State%20Emulation&descSize=14&descColor=8b949e" alt="Banner" />
+<a href="https://github.com/moranricardo/ra-pulse-orchestrator">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20,30&height=90&section=header&text=RA-PULSE%20ORCHESTRATOR&fontSize=22&fontColor=58a6ff&animation=fadeIn&fontAlignY=50&desc=Zero-Trust%20System%20&%20State%20Emulation&descSize=12&descColor=8b949e" width="100%" alt="Banner" />
+</a>
 
 <br><br>
 
@@ -42,4 +44,4 @@ Diseñado bajo principios de aislamiento, validación de flujos y trazabilidad c
 * **Ricardo Moran Maldonado** (@moranricardo)
 
 ## 📄 Licencia
-Este proyecto se encuentra bajo la [Licencia MIT](LICENSE).
+Este proyecto se encuentra bajo la [Licencia MIT](LICENSE)
