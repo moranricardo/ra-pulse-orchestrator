@@ -41,9 +41,15 @@ Diseñado bajo principios de aislamiento, validación de flujos y trazabilidad c
 ## 📊 Estadísticas del Repositorio
 
 <p align="center">
-  <code>🌐 Lenguajes: 3</code> &nbsp;&nbsp;|&nbsp;&nbsp; 
-  <code>📦 Tamaño: 327 KiB</code> &nbsp;&nbsp;|&nbsp;&nbsp; 
-  <code>🕒 Último commit: Hoy</code>
+  <a href="https://github.com/moranricardo/ra-pulse-orchestrator/search?l=python">
+    <img src="https://img.shields.io/badge/languages-3-blue?style=flat-square" alt="Languages Count" />
+  </a>
+  <a href="https://github.com/moranricardo/ra-pulse-orchestrator/tree/main/src">
+    <img src="https://img.shields.io/badge/repo%20size-327%20KiB-green?style=flat-square" alt="Repo Size" />
+  </a>
+  <a href="https://github.com/moranricardo/ra-pulse-orchestrator/commits/main">
+    <img src="https://img.shields.io/badge/last%20commit-today-orange?style=flat-square" alt="Last Commit" />
+  </a>
 </p>
 
 ## 👤 Autor
