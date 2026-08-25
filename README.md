@@ -1,8 +1,6 @@
 <div align="center">
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=450&height=45&lines=RA-PULSE+ORCHESTRATOR;SYSTEM+STATUS%3A+ACTIVE+PULSE;ZERO-TRUST+SECURITY+ENABLED" alt="Typing SVG" />
-</a>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,30&height=160&section=header&text=RA-PULSE%20ORCHESTRATOR&fontSize=26&fontColor=58a6ff&animation=fadeIn&fontAlignY=38&desc=Zero-Trust%20System%20&%20State%20Emulation&descSize=14&descColor=8b949e" alt="Banner" />
 
 <br><br>
 
