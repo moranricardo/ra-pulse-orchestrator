@@ -11,9 +11,9 @@
 
 ## 📊 Estadísticas del Repositorio
 
-![Languages](https://img.shields.io/github/languages/count/moranricardo/ra-pulse-orchestrator?style=flat-square&color=blue)
-![Repo Size](https://img.shields.io/github/repo-size/moranricardo/ra-pulse-orchestrator?style=flat-square&color=green)
-![Last Commit](https://img.shields.io/github/last-commit/moranricardo/ra-pulse-orchestrator?style=flat-square&color=orange)
+![Languages](https://img.shields.io/badge/languages-JavaScript%20%7C%20Python-blue?style=flat-square)
+![Repo Size](https://img.shields.io/badge/repo%20size-327%20KiB-green?style=flat-square)
+![Last Commit](https://img.shields.io/badge/last%20commit-today-orange?style=flat-square)
 
 ## 👤 Autor
 
