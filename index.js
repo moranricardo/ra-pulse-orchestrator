@@ -1,11 +1,35 @@
+/**
+ * Núcleo de Orquestación y Auditoría - Ra Pulse
+ * Actualizado para leer dinámicamente desde config.json
+ */
+
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const CONFIG = {
+// Cargar configuración de forma dinámica y segura
+let CONFIG = {
     gerritUrl: 'https://android-review.googlesource.com/changes/?q=status:open+project:platform/frameworks/base&n=5',
     stateFile: path.join(__dirname, 'state.json')
 };
+
+try {
+    const configPath = path.join(__dirname, 'config.json');
+    if (fs.existsSync(configPath)) {
+        const fileData = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+        if (fileData.gerrit && fileData.gerrit.url) {
+            // Construimos la URL completa usando la consulta y URL del config
+            const baseUrl = fileData.gerrit.url.replace(/\/$/, '');
+            const query = encodeURIComponent(fileData.gerrit.query || 'status:open');
+            CONFIG.gerritUrl = `${baseUrl}/changes/?q=${query}&n=5`;
+        }
+        if (fileData.pulseOutputFile) {
+            CONFIG.stateFile = path.join(__dirname, fileData.pulseOutputFile);
+        }
+    }
+} catch (error) {
+    console.warn(`⚠️ No se pudo cargar config.json completamente, usando valores por defecto: ${error.message}`);
+}
 
 function parseGerritResponse(rawData) {
     const ANTI_XSS_PREFIX = ")]}'\n";
@@ -21,13 +45,13 @@ function updateSystemPulse(updates) {
         if (fs.existsSync(CONFIG.stateFile)) {
             state = JSON.parse(fs.readFileSync(CONFIG.stateFile, 'utf8'));
         }
-        
+
         const updatedState = {
             ...state,
             ...updates,
             last_pulsecheck: new Date().toISOString()
         };
-        
+
         fs.writeFileSync(CONFIG.stateFile, JSON.stringify(updatedState, null, 2));
     } catch (error) {
         console.error(`🚨 No se pudo escribir la telemetría: ${error.message}`);
@@ -45,13 +69,13 @@ function checkGerritPulse() {
         res.on('end', () => {
             try {
                 if (res.statusCode !== 200) throw new Error(`HTTP ${res.statusCode}`);
-                
+
                 const changes = parseGerritResponse(rawData);
                 console.log(`✨ [Maat]: Conexión exitosa. ${changes.length} parches analizados.`);
 
                 if (changes.length > 0) {
                     const mostRecentChange = changes[0];
-                    
+
                     updateSystemPulse({
                         status: "STABLE",
                         gerrit: {
@@ -65,7 +89,7 @@ function checkGerritPulse() {
                             }
                         }
                     });
-                    
+
                     console.log(`📡 Último Cambio ID Detectado: ${mostRecentChange.change_id}`);
                     console.log(`📝 Asunto: ${mostRecentChange.subject}`);
                 }
