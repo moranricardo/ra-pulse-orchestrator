@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1 align="center">🚀 RA-PULSE ORCHESTRATOR</h1>
+<h1 align="center">🚀⚡ RA-PULSE ORCHESTRATOR ⚡🚀</h1>
 <p align="center"><b>SYSTEM STATUS: ACTIVE PULSE | ZERO-TRUST SECURITY ENABLED</b></p>
 
 <br>
