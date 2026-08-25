@@ -1,5 +1,13 @@
 {
-  "gerritUrl": "https://android-review.googlesource.com",
-  "query": "status:open (label:Code-Review-2 OR label:Verified-1) project:kernel/common",
-  "pulseOutputFile": "state.json"
+  "port": 3000,
+  "environment": "development",
+  "gerrit": {
+    "url": "https://android-review.googlesource.com",
+    "query": "status:open (label:Code-Review-2 OR label:Verified-1) project:kernel/common"
+  },
+  "pulseOutputFile": "state.json",
+  "security": {
+    "zeroTrustEnabled": true,
+    "allowedOrigins": ["*"]
+  }
 }
