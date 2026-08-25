@@ -1,9 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/git.svg" width="40" height="40" alt="Git" />
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/python.svg" width="40" height="40" alt="Python" />
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/nodejs.svg" width="40" height="40" alt="Node.js" />
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/vscode.svg" width="40" height="40" alt="VS Code" />
+<img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="100%" alt="Banner Animado de Desarrollo" />
 
 # RA-Pulse Orchestrator 🚀
 
