@@ -1,10 +1,17 @@
-# Telemetría de estado local (Evita ruido en los commits)
+# Telemetría local y snapshots
 state.json
-
-# Dependencias de Node.js
-node_modules/
-package-lock.json
-
-# Logs del sistema y de errores
+proyectos/snapshots/
 *.log
 npm-debug.log*
+
+# Dependencias y entornos
+node_modules/
+.env
+.env.local
+
+# Cachés y temporales
+.DS_Store
+Thumbs.db
+.vscode/
+__pycache__/
+*.pyc
