@@ -41,9 +41,7 @@ Diseñado bajo principios de aislamiento, validación de flujos y trazabilidad c
 ## 📊 Estadísticas del Repositorio
 
 <p align="center">
-  <b>🌐 Lenguajes:</b> 3 &nbsp;&nbsp;|&nbsp;&nbsp; 
-  <b>📦 Tamaño:</b> 327 KiB &nbsp;&nbsp;|&nbsp;&nbsp; 
-  <b>🕒 Último commit:</b> Hoy
+🌐 3 Lenguajes &nbsp;&nbsp;•&nbsp;&nbsp; 📦 327 KiB &nbsp;&nbsp;•&nbsp;&nbsp; 🕒 Commit: Hoy
 </p>
 
 ## 👤 Autor
