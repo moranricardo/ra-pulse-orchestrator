@@ -1,17 +1,23 @@
 <div align="center">
 
-<a href="https://github.com/moranricardo/ra-pulse-orchestrator">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&pause=1000&color=58A6FF&center=true&vCenter=true&width=380&height=65&lines=RA-PULSE+ORCHESTRATOR;SYSTEM+STATUS%3A+ACTIVE+PULSE;ZERO-TRUST+SECURITY+ENABLED" alt="Typing SVG" />
-</a>
+<h1 align="center">🚀 RA-PULSE ORCHESTRATOR</h1>
+<p align="center"><b>SYSTEM STATUS: ACTIVE PULSE | ZERO-TRUST SECURITY ENABLED</b></p>
 
 <br>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Security-Zero_Trust-blue?style=for-the-badge&logo=security&logoColor=white" alt="Zero Trust" />
-  <img src="https://img.shields.io/badge/Status-Active_Pulse-success?style=for-the-badge&logo=opsgenie&logoColor=white" alt="Status" />
-  <img src="https://img.shields.io/badge/DevContainer-1D63ED?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="DevContainer" />
+  <a href="https://www.python.org">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  </a>
+  <a href="https://nodejs.org">
+    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  </a>
+  <a href="https://owasp.org/www-community/Zero_Trust">
+    <img src="https://img.shields.io/badge/Security-Zero_Trust-blue?style=for-the-badge&logo=security&logoColor=white" alt="Zero Trust" />
+  </a>
+  <a href="https://code.visualstudio.com/docs/remote/containers">
+    <img src="https://img.shields.io/badge/DevContainer-1D63ED?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="DevContainer" />
+  </a>
 </p>
 
 </div>
