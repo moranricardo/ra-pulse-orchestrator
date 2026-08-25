@@ -11,9 +11,9 @@
 
 ## 📊 Estadísticas del Repositorio
 
-![Languages](https://img.shields.io/badge/languages-JavaScript%20%7C%20Python-blue?style=flat-square)
-![Repo Size](https://img.shields.io/badge/repo%20size-327%20KiB-green?style=flat-square)
-![Last Commit](https://img.shields.io/badge/last%20commit-today-orange?style=flat-square)
+* **💻 Lenguajes:** JavaScript | Python
+* **📦 Tamaño del Repositorio:** 327 KiB
+* **⏱️ Último Commit:** Hoy
 
 ## 👤 Autor
 
@@ -21,4 +21,4 @@
 
 ## 📄 Licencia
 
-Este proyecto se encuentra bajo la [Licencia MIT](LICENSE).
+Este proyecto se encuentra bajo la [Licencia MIT](LICENSE)
