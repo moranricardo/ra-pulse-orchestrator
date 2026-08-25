@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="100%" alt="Banner Animado de Desarrollo" />
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d5850659341.gif" width="100%" alt="Banner Tecnológico Animado" />
 
 # RA-Pulse Orchestrator 🚀
 
