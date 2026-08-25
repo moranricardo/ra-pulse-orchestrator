@@ -1,11 +1,13 @@
 /**
  * Módulo de Gestión y Registro de Mantenimiento - Ra Pulse
+ * Actualizado con límite de seguridad para evitar desbordamiento del log.
  */
 
 const fs = require('fs');
 const path = require('path');
 
 const LOG_FILE = path.join(__dirname, 'log_mantenimiento.json');
+const MAX_LOG_RECORDS = 100;
 
 function registrarMantenimiento(accion, detalles) {
     let logData = {
@@ -32,6 +34,11 @@ function registrarMantenimiento(accion, detalles) {
     };
 
     logData.logs.push(nuevoRegistro);
+
+    if (logData.logs.length > MAX_LOG_RECORDS) {
+        logData.logs = logData.logs.slice(-MAX_LOG_RECORDS);
+    }
+
     logData.total_records = logData.logs.length;
     logData.last_maintenance = new Date().toISOString();
 
@@ -43,9 +50,8 @@ function registrarMantenimiento(accion, detalles) {
     }
 }
 
-// Ejemplo de ejecución automática si se llama directamente
 if (require.main === module) {
-    registrarMantenimiento("SYSTEM_AUDIT", "Ejecución de rutina de mantenimiento y verificación de estado.");
+    registrarMantenimiento("SYSTEM_AUDIT", "Ejecución de rutina de mantenimiento y verificación de estado con límite optimizado.");
 }
 
 module.exports = { registrarMantenimiento };
