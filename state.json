@@ -1,4 +1,5 @@
 {
+  "schema_version": "1.1.0",
   "last_pulse": "2026-07-27T06:20:46.593Z",
   "radio": "unified-ecosystem-auditor",
   "status": "STABLE",
@@ -24,5 +25,6 @@
       "status": "ACTIVE"
     }
   },
-  "last_pulsecheck": "2026-08-25T01:17:07.592Z"
+  "last_pulsecheck": "2026-08-25T01:17:07.592Z",
+  "environment": "production"
 }
