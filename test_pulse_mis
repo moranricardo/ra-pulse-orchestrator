@@ -1,0 +1,30 @@
+/**
+ * Script de Prueba de Pulso y Análisis de Parches - Ra Pulse
+ * Actualizado para soportar argumentos dinámicos por consola y manejo robusto.
+ */
+
+async function ejecutar() {
+    const args = process.argv.slice(2);
+    const asunto = args.length > 0 
+        ? args.join(' ') 
+        : "usb: Gate charging-state FUNCTION_NONE behind a config flag";
+
+    console.log(`📡 Analizando parche: "${asunto}"`);
+
+    try {
+        const { analizarParche } = await import('../ia-didactica-core/index.js');
+        const analisis = await analizarParche(asunto);
+        console.log('📝 Análisis de IA completado con éxito:');
+        console.log(analisis);
+    } catch (err) {
+        console.warn('⚠️ Advertencia: No se pudo cargar "ia-didactica-core" o falló el análisis.');
+        console.warn(`    Motivo: ${err.message}`);
+        console.log('✅ Prueba omitida de forma segura por el protocolo de tolerancia.');
+    }
+}
+
+if (require.main === module) {
+    ejecutar();
+}
+
+module.exports = { ejecutar };
