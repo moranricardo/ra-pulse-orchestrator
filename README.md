@@ -41,9 +41,15 @@ Diseñado bajo principios de aislamiento, validación de flujos y trazabilidad c
 ## 📊 Estadísticas del Repositorio
 
 <p align="center">
-  <img src="https://img.shields.io/badge/languages-3-blue?style=flat-square" alt="Languages Count" />
-  <img src="https://img.shields.io/badge/repo%20size-327%20KiB-green?style=flat-square" alt="Repo Size" />
-  <img src="https://img.shields.io/badge/last%20commit-today-orange?style=flat-square" alt="Last Commit" />
+  <a href="https://github.com/moranricardo/ra-pulse-orchestrator">
+    <img src="https://img.shields.io/badge/languages-3-blue?style=flat-square" alt="Languages Count" />
+  </a>
+  <a href="https://github.com/moranricardo/ra-pulse-orchestrator">
+    <img src="https://img.shields.io/badge/repo%20size-327%20KiB-green?style=flat-square" alt="Repo Size" />
+  </a>
+  <a href="https://github.com/moranricardo/ra-pulse-orchestrator">
+    <img src="https://img.shields.io/badge/last%20commit-today-orange?style=flat-square" alt="Last Commit" />
+  </a>
 </p>
 
 ## 👤 Autor
