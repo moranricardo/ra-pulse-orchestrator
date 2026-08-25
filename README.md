@@ -1,13 +1,13 @@
 <div align="center">
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=750&height=50&lines=RA-PULSE+ORCHESTRATOR;SYSTEM+STATUS%3A+ACTIVE+PULSE;ZERO-TRUST+SECURITY+ENABLED" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&pause=1000&color=58A6FF&center=true&vCenter=true&width=800&height=65&lines=RA-PULSE+ORCHESTRATOR;SYSTEM+STATUS%3A+ACTIVE+PULSE;ZERO-TRUST+SECURITY+ENABLED" alt="Typing SVG" /></a>
 
-<br>
+<br><br>
 
-# RA-Pulse Orchestrator 🚀
-
-[![Pulse Status](https://img.shields.io/badge/STATUS-ACTIVE%20PULSE-success?style=for-the-badge&logo=opsgenie)](https://github.com/moranricardo/ra-pulse-orchestrator)
-[![Zero-Trust](https://img.shields.io/badge/SECURITY-ZERO%20TRUST-blue?style=for-the-badge&logo=security)]()
+<img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+<img src="https://img.shields.io/badge/SECURITY-ZERO%20TRUST-blue?style=for-the-badge&logo=security" alt="Zero Trust" />
+<img src="https://img.shields.io/badge/STATUS-ACTIVE%20PULSE-success?style=for-the-badge&logo=opsgenie" alt="Status" />
 
 </div>
 
@@ -28,4 +28,4 @@ Diseñado bajo principios de aislamiento y trazabilidad criptográfica de transa
 * **Ricardo Moran Maldonado** (@ricardomoranbot)
 
 ## 📄 Licencia
-Este proyecto se encuentra bajo la [Licencia MIT](LICENSE).
+Este proyecto se encuentra bajo la [Licencia MIT](LICENSE)
