@@ -1,30 +1,10 @@
 {
-  "schema_version": "1.1.0",
-  "last_pulse": "2026-07-27T06:20:46.593Z",
-  "radio": "unified-ecosystem-auditor",
-  "status": "STABLE",
-  "telemetry": {
-    "github": {
-      "pullRequests": 0,
-      "issues": 0,
-      "alerts": []
-    },
-    "gerrit": {
-      "cambiosAbiertos": 10,
-      "alerts": []
-    },
-    "hasAnomalies": false
-  },
-  "gerrit": {
-    "last_seen_change_id": "I30a64f70c862bd75df29a163196232dc89a923a8",
-    "pending_reviews": 5
-  },
-  "radios": {
-    "didactic-octo-chrome": {
-      "last_sync": "2026-08-25T01:17:07.592Z",
-      "status": "ACTIVE"
-    }
-  },
-  "last_pulsecheck": "2026-08-25T01:17:07.592Z",
-  "environment": "production"
+  "system": "RA-Pulse-Orchestrator",
+  "status": "OPTIMIZED",
+  "last_pulse": "2026-08-26T07:50:02.147Z",
+  "metrics": {
+    "uptime_seconds": 1,
+    "rss_memory_mb": "44.03",
+    "heap_used_mb": "4.46"
+  }
 }
