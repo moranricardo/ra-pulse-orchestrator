@@ -1,19 +1,5 @@
 [
   {
-    "timestamp": "2026-08-27T22:53:22.789Z",
-    "systemStatus": "OPTIMIZED",
-    "heapUsedMb": "4.54",
-    "uptimeSeconds": 0,
-    "healthCheck": "PASSED"
-  },
-  {
-    "timestamp": "2026-08-27T22:53:26.599Z",
-    "systemStatus": "OPTIMIZED",
-    "heapUsedMb": "4.54",
-    "uptimeSeconds": 0,
-    "healthCheck": "PASSED"
-  },
-  {
     "timestamp": "2026-08-27T22:53:30.715Z",
     "systemStatus": "OPTIMIZED",
     "heapUsedMb": "4.56",
@@ -346,6 +332,20 @@
     "timestamp": "2026-08-27T22:56:17.237Z",
     "systemStatus": "OPTIMIZED",
     "heapUsedMb": "4.54",
+    "uptimeSeconds": 1,
+    "healthCheck": "PASSED"
+  },
+  {
+    "timestamp": "2026-08-27T22:56:21.236Z",
+    "systemStatus": "OPTIMIZED",
+    "heapUsedMb": "2.51",
+    "uptimeSeconds": 0,
+    "healthCheck": "PASSED"
+  },
+  {
+    "timestamp": "2026-08-27T22:56:21.293Z",
+    "systemStatus": "OPTIMIZED",
+    "heapUsedMb": "4.56",
     "uptimeSeconds": 1,
     "healthCheck": "PASSED"
   }
