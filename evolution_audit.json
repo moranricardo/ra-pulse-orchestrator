@@ -1,12 +1,5 @@
 [
   {
-    "timestamp": "2026-08-27T21:18:53.696Z",
-    "systemStatus": "OPTIMIZED",
-    "heapUsedMb": "4.55",
-    "uptimeSeconds": 1,
-    "healthCheck": "PASSED"
-  },
-  {
     "timestamp": "2026-08-27T21:18:57.770Z",
     "systemStatus": "OPTIMIZED",
     "heapUsedMb": "4.54",
@@ -346,6 +339,13 @@
     "timestamp": "2026-08-27T21:21:39.082Z",
     "systemStatus": "OPTIMIZED",
     "heapUsedMb": "4.55",
+    "uptimeSeconds": 0,
+    "healthCheck": "PASSED"
+  },
+  {
+    "timestamp": "2026-08-27T21:21:42.791Z",
+    "systemStatus": "OPTIMIZED",
+    "heapUsedMb": "2.54",
     "uptimeSeconds": 0,
     "healthCheck": "PASSED"
   }
