@@ -1,28 +1,21 @@
 {
   "metadatos": {
-    "generadoEn": "2026-08-27T18:57:00.097Z",
+    "generadoEn": "2026-08-27T18:57:04.376Z",
     "sistemaObjetivo": "RA-Pulse-Orchestrator",
     "entorno": "Moto E6 - Termux Local",
     "arquitecto": "Ricardo Moran Maldonado"
   },
   "estadoOperativoActual": {
     "estadoSistema": "OPTIMIZED",
-    "ultimoPulso": "2026-08-27T18:57:00.079Z",
-    "memoriaHeapMb": "4.53",
+    "ultimoPulso": "2026-08-27T18:57:04.361Z",
+    "memoriaHeapMb": "4.52",
     "tiempoActivoUptime": 1,
     "ultimoError": "Ninguno (Sistema Saludable)"
   },
   "bitacoraEvolutiva": {
-    "totalPulsesRegistrados": 46,
+    "totalPulsesRegistrados": 47,
     "ultimoSaludCheck": "PASSED",
     "ultimosRegistros": [
-      {
-        "timestamp": "2026-08-27T18:56:51.720Z",
-        "systemStatus": "OPTIMIZED",
-        "heapUsedMb": "4.54",
-        "uptimeSeconds": 1,
-        "healthCheck": "PASSED"
-      },
       {
         "timestamp": "2026-08-27T18:56:55.929Z",
         "systemStatus": "OPTIMIZED",
@@ -34,6 +27,13 @@
         "timestamp": "2026-08-27T18:57:00.092Z",
         "systemStatus": "OPTIMIZED",
         "heapUsedMb": "4.53",
+        "uptimeSeconds": 1,
+        "healthCheck": "PASSED"
+      },
+      {
+        "timestamp": "2026-08-27T18:57:04.372Z",
+        "systemStatus": "OPTIMIZED",
+        "heapUsedMb": "4.52",
         "uptimeSeconds": 1,
         "healthCheck": "PASSED"
       }
